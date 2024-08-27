@@ -1,19 +1,4 @@
 
-Replace `/path/to/server/files` with the path to your Minecraft server files and `your-docker-image` with the name of your Docker image. You can choose the desired Java version by setting the `JAVA_HOME` environment variable.
-
-### Running Minecraft Bedrock Edition Server
-
-To run a Minecraft Bedrock Edition server, use the following command:
-
-```bash
-docker run -d --name minecraft-bedrock \
-  -v /path/to/bedrock/server/files:/workspace \
-  -p 19132:19132/udp \
-  your-docker-image
-```
-
-Replace `/path/to/bedrock/server/files` with the path to your Bedrock server files and `your-docker-image` with the name of your Docker image.
-
 ## Available Java Versions
 
 - **JDK 8:** `zulu8.80.0.17-ca-jdk8.0.422-linux_x64`
